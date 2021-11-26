@@ -3,9 +3,11 @@ library(data.table)
 library(ggplot2)
 
 # Load shapefile with water
+# Shapefile downloaded from https://www.marineregions.org/gazetteer.php?p=details&id=1902
 water<-st_read("shapefiles/iho_Atlantic/iho.shp")
 
 # Load shapefile with ICES rectangles
+# Shapefile downloaded from https://gis.ices.dk/sf/index.html?widget=StatRec (Quick downloads)
 ICESrect<-st_read("shapefiles/ICES_rectangles/ICES_Statistical_Rectangles_Eco.shp")
 
 # Load input data
